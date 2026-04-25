@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samuel Ibrahim | Digital Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=IBM+Plex+Sans+Arabic:wght@300;500;700&display=swap');
+
+        :root { --primary: #00ffa3; --accent: #ff0055; --bg: #050505; }
+
+        body { background-color: var(--bg); color: white; font-family: 'IBM Plex Sans Arabic', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
+
+        .eng-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .grain-bg { position: fixed; inset: 0; background-image: url("https://grainy-gradients.vercel.app/noise.svg"); opacity: 0.03; pointer-events: none; z-index: 50; }
+
+        .glow { position: fixed; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0, 255, 163, 0.05) 0%, transparent 70%); border-radius: 50%; top: -200px; left: -200px; z-index: 0; animation: move 20s infinite alternate; }
+
+        @keyframes move { from { transform: translate(0, 0); } to { transform: translate(100vw, 100vh); } }
+
+        .blueprint { position: fixed; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 40px 40px; z-index: -1; }
+
+        .editor-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); position: relative; overflow: hidden; }
+
+        .editor-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); }
+
+        .card-header { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+        .btn-main { background: white; color: black; padding: 14px 35px; border-radius: 100px; font-weight: 600; transition: 0.3s; display: inline-block; }
+
+        .btn-main:hover { background: var(--primary); transform: scale(1.05); }
+
+        .playhead-line { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--primary); left: 0; pointer-events: none; opacity: 0; transition: opacity 0.3s; }
+
+        .editor-card:hover .playhead-line { opacity: 1; animation: scan 2s linear infinite; }
+
+        @keyframes scan { from { left: 0%; } to { left: 100%; } }
+
+ 
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="grain-bg"></div>
+
+    <div class="glow"></div>
+
+    <div class="blueprint"></div>
+
+
+
+    <nav class="p-8 flex justify-between items-center relative z-20">
+
+        <div class="eng-font font-bold text-2xl tracking-tighter">SI<span class="text-[#00ffa3]">.</span></div>
+
+        <div class="flex gap-8 text-xs eng-font uppercase tracking-widest opacity-60">
+
+            <a href="#work" class="hover:text-[#00ffa3] transition">Work</a>
+
+            <a href="#contact" class="hover:text-[#00ffa3] transition">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+
+    <header class="min-h-[90vh] flex flex-col items-center justify-center text-center px-4 relative z-10">
+
+        <div class="inline-block border border-white/10 px-4 py-1 rounded-full text-[10px] eng-font mb-8 opacity-50 tracking-[4px]">
+
+            BASED IN EGYPT • AVAILABLE GLOBALLY
+
+        </div>
+
+        <h1 class="eng-font text-5xl md:text-[110px] font-bold leading-[0.9] tracking-tighter mb-10 text-center">
+
+            SAMUEL IBRAHIM<br><span class="text-transparent" style="-webkit-text-stroke: 1px rgba(255,255,255,0.4)">Video Editor </span>
+
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-center text-gray-300 text-lg leading-relaxed mb-10 px-4" dir="ltr">
+
+    Hi, I'm <span class="text-[#00ffa3] font-bold">Samuel Ibrahim</span>, a professional Video Editor and Content Creator dedicated to transforming raw footage into high-impact visual stories. Specializing in snappy, retention-focused editing, I help brands stand out in a crowded digital world.
+
+</p>
+
+
+
+        <a href="#work" class="btn-main eng-font text-sm uppercase tracking-widest">View my Work</a>
+
+    </header>
+
+
+
+    <main id="work" class="px-6 py-20 relative z-10">
+
+        <div class="max-w-7xl mx-auto">
+
+           
+
+            <div class="mb-32">
+
+                <div class="flex justify-between items-end mb-12">
+
+                    <div class="text-right">
+
+                        <span class="text-[#00ffa3] eng-font text-xs tracking-[4px] mb-2 block">CATEGORY 01</span>
+
+                        <h2 class="eng-font text-4xl font-bold uppercase text-white">Recent Edits</h2>
+
+                        <div class="h-1 w-16 bg-[#00ffa3] mt-2"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="editor-card rounded-xl group hover:border-[#00ffa3]">
+
+    <div class="card-header eng-font text-[#00ffa3]">
+
+        <span>After_qyjsle.mp4</span>
+
+        <span>01:00</span>
+
+    </div>
+
+   
+
+    <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+        <iframe
+
+            class="absolute top-0 left-0 w-full h-full scale-[1.01]"
+
+            src="https://player.cloudinary.com/embed/?cloud_name=dmi5rdk75&public_id=After_qyjsle&autoplay=true&muted=true&loop=true"
+
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+
+            allowfullscreen
+
+            frameborder="0">
+
+        </iframe>
+
+       
+
+        <div class="playhead-line"></div>
+
+    </div>
+
+
+
+    <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+        <h3 class="text-xs font-bold text-white mb-1">اسم مشروعك (After)</h3>
+
+        <p class="text-[10px] text-gray-500 uppercase">Cloudinary Hosted / VFX</p>
+
+    </div>
+
+</div>
+
+
+
+                    <div class="editor-card rounded-xl group hover:border-[#00ffa3]">
+
+                        <div class="card-header eng-font text-[#00ffa3]"><span>Project_02.mp4</span><span>00:45</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">اسم الفيديو الثاني</h3>
+
+                            <p class="text-[10px] text-gray-500 uppercase">Color Grading</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="editor-card rounded-xl group hover:border-[#00ffa3]">
+
+                        <div class="card-header eng-font text-[#00ffa3]"><span>Project_03.mp4</span><span>00:30</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">اسم الفيديو الثالث</h3>
+
+                            <p class="text-[10px] text-gray-500 uppercase">Montage</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="editor-card rounded-xl group hover:border-[#00ffa3]">
+
+                        <div class="card-header eng-font text-[#00ffa3]"><span>Project_04.mp4</span><span>01:10</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">اسم الفيديو الرابع</h3>
+
+                            <p class="text-[10px] text-gray-500 uppercase">Short Content</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mb-32">
+
+                <div class="flex justify-between items-end mb-12">
+
+                    <div class="text-right">
+
+                        <span class="text-[#ff0055] eng-font text-xs tracking-[4px] mb-2 block">CATEGORY 02</span>
+
+                        <h2 class="eng-font text-4xl font-bold uppercase text-white">Before & After</h2>
+
+                        <div class="h-1 w-16 bg-[#ff0055] mt-2"></div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <div class="editor-card rounded-xl group hover:border-[#00ffa3]">
+
+    <div class="card-header eng-font text-[#00ffa3]">
+
+        <span>Recent_Edit_01.mp4</span>
+
+        <span>01:00</span>
+
+    </div>
+
+   
+
+    <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+        <iframe
+
+            class="absolute top-0 left-0 w-full h-full scale-[1.01]"
+
+            src="https://player.cloudinary.com/embed/?cloud_name=dmi5rdk75&public_id=before_after-_nj0klm&autoplay=true&muted=true&loop=true"
+
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+
+            allowfullscreen
+
+            frameborder="0">
+
+        </iframe>
+
+       
+
+        <div class="playhead-line"></div>
+
+    </div>
+
+
+
+    <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+        <h3 class="text-xs font-bold text-white mb-1">اسم مشروعك الجديد</h3>
+
+        <p class="text-[10px] text-gray-500 uppercase">Recent Work / Montage</p>
+
+    </div>
+
+</div>
+
+                    <div class="editor-card rounded-xl group hover:border-[#ff0055]">
+
+                        <div class="card-header eng-font text-[#ff0055]"><span>Raw_02.mp4</span><span>GRADED</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line" style="background: #ff0055;"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">إضافة مؤثرات بصرية</h3>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="editor-card rounded-xl group hover:border-[#ff0055]">
+
+                        <div class="card-header eng-font text-[#ff0055]"><span>Raw_03.mp4</span><span>GRADED</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line" style="background: #ff0055;"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">معالجة إضاءة المشهد</h3>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="editor-card rounded-xl group hover:border-[#ff0055]">
+
+                        <div class="card-header eng-font text-[#ff0055]"><span>Raw_04.mp4</span><span>GRADED</span></div>
+
+                        <div class="aspect-[9/16] bg-zinc-900 overflow-hidden relative video-wrapper">
+
+                            <iframe class="yt-player absolute top-0 left-0 w-full h-full scale-[1.3] opacity-0 transition-opacity duration-500 group-hover:opacity-100" src="https://www.youtube.com/embed/ضع_هنا_كود_الفيديو?enablejsapi=1&autoplay=0&mute=1&controls=0&loop=1&playlist=ضع_هنا_كود_الفيديو&modestbranding=1&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+
+                            <img src="https://i.ytimg.com/vi/ضع_هنا_كود_الفيديو/maxresdefault.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-0 transition-opacity duration-500">
+
+                            <div class="playhead-line" style="background: #ff0055;"></div>
+
+                        </div>
+
+                        <div class="p-4 border-t border-white/5 bg-white/5 text-right">
+
+                            <h3 class="text-xs font-bold text-white mb-1">تعديلات المونتاج النهائي</h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <footer id="contact" class="py-40 px-6 text-center border-t border-white/5 relative z-10">
+
+        <h2 class="eng-font text-4xl md:text-7xl font-bold mb-16 tracking-tighter uppercase leading-[0.9]">Let's make something<br><span class="text-[#00ffa3]">Iconic.</span></h2>
+
+        <div class="flex flex-wrap justify-center gap-10 mb-20">
+
+            <a href="https://wa.me/201XXXXXXXXX" class="group flex flex-col items-center gap-3">
+
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#00ffa3] group-hover:text-black transition-all"><i class="fab fa-whatsapp text-2xl"></i></div>
+
+                <span class="eng-font text-[9px] tracking-widest opacity-40">WHATSAPP</span>
+
+            </a>
+
+            <a href="https://instagram.com/USERNAME" class="group flex flex-col items-center gap-3">
+
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#ff0055] transition-all"><i class="fab fa-instagram text-2xl"></i></div>
+
+                <span class="eng-font text-[9px] tracking-widest opacity-40">INSTAGRAM</span>
+
+            </a>
+
+            <a href="mailto:your@email.com" class="group flex flex-col items-center gap-3">
+
+                <div class="w-16 h-16 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-blue-500 transition-all"><i class="fas fa-envelope text-2xl"></i></div>
+
+                <span class="eng-font text-[9px] tracking-widest opacity-40">EMAIL</span>
+
+            </a>
+
+        </div>
+
+        <div class="opacity-20 eng-font text-[10px] tracking-[10px] uppercase">Samuel Ibrahim Portfolio © 2026</div>
+
+    </footer>
+
+
+
+    <script>
+
+        document.querySelectorAll('.editor-card').forEach(card => {
+
+            const iframe = card.querySelector('.yt-player');
+
+            if (iframe) {
+
+                card.addEventListener('mouseenter', () => {
+
+                    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+
+                });
+
+                card.addEventListener('mouseleave', () => {
+
+                    iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+
+                });
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
